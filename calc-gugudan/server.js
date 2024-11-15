@@ -63,7 +63,7 @@ function calculator() {
                 console.log('+(덧셈)계산기를 선택하셨습니다.\n');
 
                 const plusnum1 = readlineSync.question("첫 번째 숫자를 입력하세요: ");
-                const plusnum2 = readlineSync.question("두 번째 숫자를 입력하세요: ");
+                const plusnum2 = readlineSync.question("첫 번째 숫자에서 +할 숫자를 입력하세요: ");
 
                 answer = (Number(plusnum1) + Number(plusnum2))
                 console.log("\n정답은" + " " + answer + "입니다\n");
@@ -156,7 +156,7 @@ function calculator() {
                 console.log('/(나눗셈)계산기를 선택하셨습니다.\n');
 
                 const divisionnum1 = readlineSync.question("첫 번째 숫자를 입력하세요: ");
-                const divisionnum2 = readlineSync.question("첫 번째 숫자에서 곱할 숫자를 입력하세요: ");
+                const divisionnum2 = readlineSync.question("첫 번째 숫자에서 나눌 숫자를 입력하세요: ");
 
                 answer3 = (Number(divisionnum1) / Number(divisionnum2))
                 console.log("\n정답은" + " " + answer3 + "입니다\n");
