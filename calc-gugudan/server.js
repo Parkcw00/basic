@@ -19,6 +19,7 @@ function main() {
             break;
         case '2':
             readlineSync.keyInPause("구구단 출력기를 선택하셨습니다.");
+            printMultiplicationTable();
             break;
         default:
             readlineSync.keyInPause("잘못된 입력입니다. 1 또는 2를 입력해주세요.");
@@ -37,9 +38,10 @@ function calculator() {
     console.log("1. +(덧셈)계산기")
     console.log("2. -(뺄셈)계산기")
     console.log("3. x(곱셈)계산기")
-    console.log("4. /(나눗셈)계산기\n")
+    console.log("4. /(나눗셈)계산기")
+    console.log("5. 메인화면으로 나가기\n")
 
-    const choice = readlineSync.question("원하는 사칙연산을 선택하세요: ");
+    const choice = readlineSync.question("원하는 항목을 선택하세요: ");
 
     let comebackhome = true;
 
@@ -177,6 +179,10 @@ function calculator() {
                     comebackhome = false;
                 }
                 break;
+            case '5':
+                console.clear();
+                readlineSync.keyInPause('메인화면으로 돌아갑니다.');
+                return main();
         }
     }
 
@@ -185,7 +191,225 @@ function calculator() {
 
 // 구구단 출력 함수
 function printMultiplicationTable() {
-    // 여기에 코드를 작성하세요.
+    console.clear();
+
+    console.log("선택하세요:");
+    console.log("2. 구구단 2단 출력:");
+    console.log("3. 구구단 3단 출력:");
+    console.log("4. 구구단 4단 출력:");
+    console.log("5. 구구단 5단 출력:");
+    console.log("6. 구구단 6단 출력:");
+    console.log("7. 구구단 7단 출력:");
+    console.log("8. 구구단 8단 출력:");
+    console.log("9. 구구단 9단 출력:");
+    console.log("10. 메인화면으로 나가기:\n");
+
+    function guguconsolelog() {
+        console.log("==========================")
+        console.log("1. 구구단 출력기로 나가기")
+        console.log("2. 메인화면으로 나가기\n")
+        console.log("다른 모든 입력: 출력기 종료")
+        console.log("==========================\n")
+    }
+
+    const choice = readlineSync.question("출력하고 싶은 항목을 선택하세요: ");
+
+    let gugucomebackhome = true;
+
+    switch (choice) {
+        case '2':
+            console.clear();
+
+            console.log("2단 입니다\n")
+            for (let i = 1; i < 10; i++) {
+                console.log(`2 x ${i}는 ${2 * i}입니다\n`)
+            }
+
+            guguconsolelog();
+
+            const gugu2out = readlineSync.question("선택하세요: ");
+
+
+            if (gugu2out == 1) {
+                readlineSync.keyInPause('구구단 출력기로 이동합니다.');
+                return printMultiplicationTable();
+            } else if (gugu2out == 2) {
+                readlineSync.keyInPause('메인화면으로 돌아갑니다.');
+                return main();
+            } else {
+                gugucomebackhome = false;
+            }
+            break;
+        case '3':
+            console.clear();
+
+            console.log("3단 입니다\n")
+            for (let i = 1; i < 10; i++) {
+                console.log(`3 x ${i}는 ${3 * i}입니다\n`)
+            }
+
+            guguconsolelog();
+
+            const gugu3out = readlineSync.question("선택하세요: ");
+
+
+            if (gugu3out == 1) {
+                readlineSync.keyInPause('구구단 출력기로 이동합니다.');
+                return printMultiplicationTable();
+            } else if (gugu3out == 2) {
+                readlineSync.keyInPause('메인화면으로 돌아갑니다.');
+                return main();
+            } else {
+                gugucomebackhome = false;
+            }
+            break;
+        case '4':
+            console.clear();
+
+            console.log("4단 입니다\n")
+            for (let i = 1; i < 10; i++) {
+                console.log(`4 x ${i}는 ${4 * i}입니다\n`)
+            }
+
+            guguconsolelog();
+
+            const gugu4out = readlineSync.question("선택하세요: ");
+
+
+            if (gugu4out == 1) {
+                readlineSync.keyInPause('구구단 출력기로 이동합니다.');
+                return printMultiplicationTable();
+            } else if (gugu4out == 2) {
+                readlineSync.keyInPause('메인화면으로 돌아갑니다.');
+                return main();
+            } else {
+                gugucomebackhome = false;
+            }
+            break;
+        case '5':
+            console.clear();
+
+            console.log("5단 입니다\n")
+            for (let i = 1; i < 10; i++) {
+                console.log(`5 x ${i}는 ${5 * i}입니다\n`)
+            }
+
+            guguconsolelog();
+
+            const gugu5out = readlineSync.question("선택하세요: ");
+
+
+            if (gugu5out == 1) {
+                readlineSync.keyInPause('구구단 출력기로 이동합니다.');
+                return printMultiplicationTable();
+            } else if (gugu5out == 2) {
+                readlineSync.keyInPause('메인화면으로 돌아갑니다.');
+                return main();
+            } else {
+                gugucomebackhome = false;
+            }
+            break;
+        case '6':
+            console.clear();
+
+            console.log("6단 입니다\n")
+            for (let i = 1; i < 10; i++) {
+                console.log(`6 x ${i}는 ${6 * i}입니다\n`)
+            }
+
+            guguconsolelog();
+
+            const gugu6out = readlineSync.question("선택하세요: ");
+
+
+            if (gugu6out == 1) {
+                readlineSync.keyInPause('구구단 출력기로 이동합니다.');
+                return printMultiplicationTable();
+            } else if (gugu6out == 2) {
+                readlineSync.keyInPause('메인화면으로 돌아갑니다.');
+                return main();
+            } else {
+                gugucomebackhome = false;
+            }
+            break;
+        case '7':
+            console.clear();
+
+            console.log("7단 입니다\n")
+            for (let i = 1; i < 10; i++) {
+                console.log(`7 x ${i}는 ${7 * i}입니다\n`)
+            }
+
+            guguconsolelog();
+
+            const gugu7out = readlineSync.question("선택하세요: ");
+
+
+            if (gugu7out == 1) {
+                readlineSync.keyInPause('구구단 출력기로 이동합니다.');
+                return printMultiplicationTable();
+            } else if (gugu7out == 2) {
+                readlineSync.keyInPause('메인화면으로 돌아갑니다.');
+                return main();
+            } else {
+                gugucomebackhome = false;
+            }
+            break;
+
+        case '8':
+            console.clear();
+
+            console.log("8단 입니다\n")
+            for (let i = 1; i < 10; i++) {
+                console.log(`8 x ${i}는 ${8 * i}입니다\n`)
+            }
+
+            guguconsolelog();
+
+            const gugu8out = readlineSync.question("선택하세요: ");
+
+
+            if (gugu8out == 1) {
+                readlineSync.keyInPause('구구단 출력기로 이동합니다.');
+                return printMultiplicationTable();
+            } else if (gugu8out == 2) {
+                readlineSync.keyInPause('메인화면으로 돌아갑니다.');
+                return main();
+            } else {
+                gugucomebackhome = false;
+            }
+            break;
+
+        case '9':
+            console.clear();
+
+            console.log("9단 입니다\n")
+            for (let i = 1; i < 10; i++) {
+                console.log(`9 x ${i}는 ${9 * i}입니다\n`)
+            }
+
+            guguconsolelog();
+
+            const gugu9out = readlineSync.question("선택하세요: ");
+
+
+            if (gugu9out == 1) {
+                readlineSync.keyInPause('구구단 출력기로 이동합니다.');
+                return printMultiplicationTable();
+            } else if (gugu9out == 2) {
+                readlineSync.keyInPause('메인화면으로 돌아갑니다.');
+                return main();
+            } else {
+                gugucomebackhome = false;
+            }
+            break;
+        case '10':
+            console.clear();
+            readlineSync.keyInPause('메인화면으로 돌아갑니다.');
+            return main();
+
+    }
+
 }
 
 // 프로그램 실행
