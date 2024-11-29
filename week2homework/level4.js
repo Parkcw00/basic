@@ -43,8 +43,7 @@
 // }
 
 // const result1 = myMap(objArray, function (value) {
-//   return value.price;
-// });
+//   return value.price});
 // console.log(result1);
 
 // // //--------------------------------------------------------------------------------------//
