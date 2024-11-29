@@ -16,8 +16,8 @@ class GameCharacter {
   }
 
   levelUp() {
-    const randomAtk = Math.random() * this.atk;
-    const randomHealth = Math.random() * this.health;
+    const randomAtk = Math.floor(Math.random()) * this.atk;
+    const randomHealth = Math.floor(Math.random()) * this.health;
 
     this.atk += randomAtk;
     this.health += randomHealth;
