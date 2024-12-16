@@ -4,7 +4,7 @@ import {
   createPlayer,
   updatePlayer,
   deletePlayer,
-} from "../controllers/playersController.js";
+} from "../controller/playerController.js";
 
 const router = express.Router();
 
